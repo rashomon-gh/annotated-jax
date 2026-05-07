@@ -10,7 +10,7 @@ def main():
     logger.info("Generating PRNGKey")
     key = jax.random.PRNGKey(0)
     logger.info("Splitting PRNGKey")
-    key, *subs = jax.random.split(key, 10)
+    key, _ = jax.random.split(key, 10)
     logger.success("All Good!")
 
 
