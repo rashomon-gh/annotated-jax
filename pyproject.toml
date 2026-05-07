@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Shawon Ashraf" }
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 dependencies = [
     "chex>=0.1.91",
     "datasets>=4.8.3",
