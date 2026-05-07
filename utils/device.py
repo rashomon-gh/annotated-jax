@@ -14,7 +14,7 @@ def log_device():
     logger.info(f"XLA DEVICE: {device}")
 
 
-def setup_mps():
+def setup_backend():
     if sys.platform != "darwin":
         logger.info(
             "The `mps` backend is only supported on macOS. Skipping setup to use the default JAX backend."
