@@ -1,8 +1,12 @@
 import jax
 from loguru import logger
+from utils.device import setup_backend, log_device
 
 
 def main():
+    setup_backend()
+    log_device()
+    
     logger.info("Generating PRNGKey")
     key = jax.random.PRNGKey(0)
     logger.info("Splitting PRNGKey")

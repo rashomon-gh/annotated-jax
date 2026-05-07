@@ -46,7 +46,7 @@ def download_and_unzip() -> None:
             )
             sys.stdout.flush()
 
-        file_path, _ = urllib.request.urlretrieve(corpus_url, download_path, _progress)
+        file_path, _ = urllib.request.urlretrieve(corpus_url, download_path, _progress) # type: ignore
         logger.info(
             f"Successfully downloaded {file_name} {os.stat(file_path).st_size} bytes"
         )
