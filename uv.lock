@@ -168,6 +168,7 @@ dependencies = [
     { name = "jax", marker = "sys_platform == 'darwin' or sys_platform == 'linux'" },
     { name = "jax", marker = "sys_platform == 'darwin'" },
     { name = "jax", extra = ["cuda"], marker = "sys_platform == 'linux'" },
+    { name = "jax-mps", marker = "sys_platform == 'darwin'" },
     { name = "jupyterlab" },
     { name = "loguru" },
     { name = "matplotlib" },
@@ -198,6 +199,7 @@ requires-dist = [
     { name = "ipywidgets", specifier = ">=8.1.8" },
     { name = "jax", extras = ["cpu"], marker = "sys_platform == 'darwin'", specifier = ">=0.10.0" },
     { name = "jax", extras = ["cuda"], marker = "sys_platform == 'linux'", specifier = ">=0.10.0" },
+    { name = "jax-mps", marker = "sys_platform == 'darwin'", specifier = ">=0.10.0" },
     { name = "jupyterlab", specifier = ">=4.5.7" },
     { name = "loguru", specifier = ">=0.7.3" },
     { name = "matplotlib", specifier = ">=3.10.8" },
@@ -1477,6 +1479,18 @@ with-cuda = [
     { name = "nvidia-nccl-cu12", marker = "sys_platform == 'linux'" },
     { name = "nvidia-nvjitlink-cu12", marker = "sys_platform == 'linux'" },
     { name = "nvidia-nvshmem-cu12", marker = "sys_platform == 'linux'" },
+]
+
+[[package]]
+name = "jax-mps"
+version = "0.10.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jax", marker = "sys_platform == 'darwin'" },
+    { name = "jaxlib", marker = "sys_platform == 'darwin'" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/89/84/a04711cbf295faaddaf34852c7e69906d055ed32d62525a8c0762d060807/jax_mps-0.10.0-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:e2efb4a2b2bbc11d81c58b7cca58cf46dd9296c867537eb8a8fe7220f6cec017", size = 45209995, upload-time = "2026-05-05T16:33:22.223Z" },
 ]
 
 [[package]]

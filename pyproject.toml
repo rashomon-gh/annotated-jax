@@ -15,6 +15,7 @@ dependencies = [
     "grain>=0.2.16",
     "ipython>=9.11.0",
     "ipywidgets>=8.1.8",
+    "jax-mps>=0.10.0 ; sys_platform == 'darwin'",
     "jax[cpu]>=0.10.0; sys_platform == 'darwin'",
     "jax[cuda]>=0.10.0; sys_platform == 'linux'",
     "jupyterlab>=4.5.7",
