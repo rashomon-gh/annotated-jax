@@ -5,7 +5,7 @@
 ## env setup
 
 > [!IMPORTANT]
-> Ensure that you've `uv` installed: [link](https://docs.astral.sh/uv/getting-started/installation/). 
+> Ensure that you've `uv` installed.
 
 ```bash
 uv sync
