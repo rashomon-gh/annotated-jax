@@ -8,16 +8,22 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "chex>=0.1.91",
     "datasets>=4.8.3",
     "einops>=0.8.2",
+    "flax>=0.12.7",
+    "grain>=0.2.16",
     "ipython>=9.11.0",
     "ipywidgets>=8.1.8",
-    "jax-ai-stack[tfds]>=2025.10.28",
-    "jax[cpu]>=0.8.0; sys_platform == 'darwin'",
-    "jax[cuda]>=0.8.0; sys_platform == 'linux'",
+    "jax[cpu]>=0.10.0; sys_platform == 'darwin'",
+    "jax[cuda]>=0.10.0; sys_platform == 'linux'",
     "jupyterlab>=4.5.7",
     "loguru>=0.7.3",
     "matplotlib>=3.10.8",
+    "ml-dtypes>=0.5.3",
+    "optax>=0.2.8",
+    "orbax-checkpoint>=0.11.39",
+    "orbax-export>=0.0.8",
     "palmerpenguins>=0.1.6",
     "pandas>=3.0.1",
     "pillow>=12.2.0",
@@ -25,5 +31,7 @@ dependencies = [
     "scikit-learn>=1.8.0",
     "seaborn>=0.13.2",
     "tensorboard>=2.20.0",
+    "tensorflow>=2.21.0",
+    "tensorflow-datasets>=4.9.9",
     "wandb>=0.25.1",
 ]
