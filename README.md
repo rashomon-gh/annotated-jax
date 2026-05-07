@@ -2,8 +2,6 @@
 
 > Deep Learning examples using the Jax ecosystem of libraries
 
-[![Build Status](https://shawonashraf.visualstudio.com/jax-examples/_apis/build/status%2FShawonAshraf.jax_examples?branchName=main)](https://shawonashraf.visualstudio.com/jax-examples/_build/latest?definitionId=13&branchName=main)
-
 ## env setup
 
 > [!IMPORTANT]
